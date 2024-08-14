@@ -166,9 +166,9 @@ export default function Form() {
         <button className="submitBtn" onClick={handleSubmit}>
           Marcar
         </button>
-      </div>
-      <div className={`toast ${toastVisible ? "visible" : ""}`}>
-        <p>Consulta agendada com sucesso!</p>
+        <div className={`toast ${toastVisible ? "visible" : ""}`}>
+          <p>Consulta agendada com sucesso!</p>
+        </div>
       </div>
     </>
   );

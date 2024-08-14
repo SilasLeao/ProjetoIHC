@@ -88,6 +88,8 @@ label {
 }
 
 .toast {
+  top: 650px;
+  position: absolute;
   color: rgb(43, 43, 43);
   background-color: rgb(71, 255, 47);
   padding: 10px;
