@@ -3,6 +3,7 @@ import "./Form.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+
 export default function Form() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -11,19 +12,21 @@ export default function Form() {
   const [doctor, setDoctor] = useState("");
   const [date, setDate] = useState("");
   const [toastVisible, setToastVisible] = useState(false);
+  const [filterVisible, setFilterVisible] = useState(false);
+  const [selectedDepartment, setSelectedDepartment] = useState("");
 
   function validateForm() {
-    if (name == "") {
+    if (name === "") {
       alert("Por favor, preencha o Nome");
-    } else if (phone == "") {
+    } else if (phone === "") {
       alert("Por favor, preencha o Telefone");
-    } else if (age == "") {
+    } else if (age === "") {
       alert("Por favor, preencha a Idade");
-    } else if (email == "") {
+    } else if (email === "") {
       alert("Por favor, preencha o Email");
-    } else if (doctor == "") {
+    } else if (doctor === "") {
       alert("Por favor, preencha o Nome do Médico");
-    } else if (date == "") {
+    } else if (date === "") {
       alert("Por favor, preencha a Data da Consulta");
     } else {
       return true;
@@ -38,6 +41,15 @@ export default function Form() {
       }, 3000);
     }
   }
+
+  const toggleFilter = () => {
+    setFilterVisible(!filterVisible);
+  };
+
+  const handleDepartmentChange = (e) => {
+    setSelectedDepartment(e.target.value);
+    setDoctor(""); // Limpa o campo de pesquisa ao mudar o filtro
+  };
 
   return (
     <>
@@ -89,7 +101,7 @@ export default function Form() {
           Médico:<span>*</span>
         </label>
         <div className="search">
-          <button>
+          <button type="button" onClick={toggleFilter}>
             Filtro
             <FontAwesomeIcon className="dropdownIcon" icon={faCaretDown} />
           </button>
@@ -101,6 +113,46 @@ export default function Form() {
             onChange={(e) => setDoctor(e.target.value)}
           />
         </div>
+        {filterVisible && (
+          <div className="filter-box">
+            <label>
+              <input
+                type="radio"
+                value="cardiologist"
+                checked={selectedDepartment === "cardiologist"}
+                onChange={handleDepartmentChange}
+              />
+              Cardiologista
+            </label>
+            <label>
+              <input
+                type="radio"
+                value="dermatologist"
+                checked={selectedDepartment === "dermatologist"}
+                onChange={handleDepartmentChange}
+              />
+              Dermatologista
+            </label>
+            <label>
+              <input
+                type="radio"
+                value="urologist"
+                checked={selectedDepartment === "urologist"}
+                onChange={handleDepartmentChange}
+              />
+              Urologista
+            </label>
+            <label>
+              <input
+                type="radio"
+                value="oftalmo"
+                checked={selectedDepartment === "oftalmo"}
+                onChange={handleDepartmentChange}
+              />
+              Oftamologista
+            </label>
+          </div>
+        )}
         <label htmlFor="date">
           Data:<span>*</span>
         </label>

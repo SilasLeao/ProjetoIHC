@@ -60,7 +60,7 @@ header {
 .dropdown p {
   margin: 0;
   padding: 5px 10px;
-  color: rgb(103, 178, 221);
+  color: rgb(236, 236, 236);
   transition: background-color 0.3s;
 }
 
@@ -131,6 +131,13 @@ header {
 .bellIcon {
   height: 24px;
   color: rgb(43, 43, 43);
+  transition: 0.3s;
+}
+
+.bellIcon:hover {
+  scale: 1.1;
+  cursor: pointer;
+  color: rgb(211, 1, 1);
 }
 
 .userIcon {
