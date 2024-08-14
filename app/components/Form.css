@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 30%;
-  background-color: rgb(103, 178, 221);
+  background-color: white;
   height: 65%;
   align-items: center;
   border-radius: 50px;
@@ -39,7 +39,7 @@ label {
 }
 
 #file {
-  background-color: rgb(103, 178, 221);
+  background-color: white;
 }
 
 .search {
@@ -72,7 +72,7 @@ label {
 .submitBtn {
   color: rgb(211, 1, 1);
   border: 2px solid rgb(211, 1, 1);
-  background-color: rgb(103, 178, 221);
+  background-color: white;
   padding: 0.6rem 2.5rem;
   border-radius: 30px;
   font-size: 1.3rem;
@@ -121,14 +121,14 @@ label {
 }
 
 .filter-box label {
-  color: rgb(103, 178, 221);
+  color: white;
   cursor: pointer;
   display: flex;
-  align-items: center; /* Alinha verticalmente o texto e o radio button */
-  justify-content: flex-start; /* Garante que todos os elementos comecem do mesmo ponto */
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .filter-box input[type="radio"] {
   margin-right: 8px;
-  flex-shrink: 0; /* Impede que o radio button seja redimensionado */
+  flex-shrink: 0;
 }

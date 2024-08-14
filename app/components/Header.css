@@ -4,7 +4,7 @@ header {
   width: 100vw;
   justify-content: space-around;
   height: 7%;
-  background-color: rgb(103, 178, 221);
+  background-color: white;
 }
 
 .logo {
@@ -143,4 +143,51 @@ header {
 .userIcon {
   height: 24px;
   width: 24px;
+}
+
+.notificacao {
+  position: relative;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 4px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notificationDropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: rgb(43, 43, 43);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+}
+
+.notificationItem {
+  color: rgb(236, 236, 236);
+  margin: 0;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.notificationItem:hover {
+  background-color: rgba(150, 150, 150, 0.603);
+  border-radius: 5px;
 }

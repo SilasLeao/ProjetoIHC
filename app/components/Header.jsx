@@ -5,12 +5,26 @@ import Image from "next/image";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown, faBell, faUser } from "@fortawesome/free-solid-svg-icons";
+
 export default function Header() {
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [notificationDropdownVisible, setNotificationDropdownVisible] =
+    useState(false);
+  const [notificationCount, setNotificationCount] = useState(5); // Exemplo de número de notificações
 
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
   };
+
+  const toggleNotificationDropdown = () => {
+    setNotificationDropdownVisible(!notificationDropdownVisible);
+  };
+
+  const notifications = [
+    "Nova consulta marcada para amanhã.",
+    "Resultado do exame de sangue já disponível.",
+    "Dr. Rafael Pinheiro se mudou de laboratório",
+  ];
 
   return (
     <header>
@@ -33,8 +47,20 @@ export default function Header() {
       </div>
       <div className="hospitais">Hospitais Próximos</div>
       <div className="suporte">Suporte</div>
-      <div className="notificacao">
+      <div className="notificacao" onClick={toggleNotificationDropdown}>
         <FontAwesomeIcon className="bellIcon" icon={faBell} />
+        {notificationCount > 0 && (
+          <span className="badge">{notificationCount}</span>
+        )}
+        {notificationDropdownVisible && (
+          <div className="notificationDropdown">
+            {notifications.map((notification, index) => (
+              <p key={index} className="notificationItem">
+                {notification}
+              </p>
+            ))}
+          </div>
+        )}
       </div>
       <div className="perfilSection">
         <div className="username">Olá, Usuário!</div>
