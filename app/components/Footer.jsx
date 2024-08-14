@@ -9,9 +9,9 @@ export default function Footer() {
   return (
     <footer>
       <div className="socials">
-        <FontAwesomeIcon className="dropdownIcon" icon={faInstagram} />
-        <FontAwesomeIcon className="dropdownIcon" icon={faFacebook} />
-        <FontAwesomeIcon className="dropdownIcon" icon={faWhatsapp} />
+        <FontAwesomeIcon className="socialIcon" icon={faInstagram} />
+        <FontAwesomeIcon className="socialIcon" icon={faFacebook} />
+        <FontAwesomeIcon className="socialIcon" icon={faWhatsapp} />
       </div>
       <p>MedLink© - Todos os Direitos Reservados</p>
     </footer>
