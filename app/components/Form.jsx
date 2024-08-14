@@ -10,6 +10,7 @@ export default function Form() {
   const [email, setEmail] = useState("");
   const [doctor, setDoctor] = useState("");
   const [date, setDate] = useState("");
+  const [toastVisible, setToastVisible] = useState(false);
 
   function validateForm() {
     if (name == "") {
@@ -31,6 +32,10 @@ export default function Form() {
 
   function handleSubmit() {
     if (validateForm()) {
+      setToastVisible(true);
+      setTimeout(() => {
+        setToastVisible(false);
+      }, 3000);
     }
   }
 
@@ -109,6 +114,9 @@ export default function Form() {
         <button className="submitBtn" onClick={handleSubmit}>
           Marcar
         </button>
+      </div>
+      <div className={`toast ${toastVisible ? "visible" : ""}`}>
+        <p>Consulta agendada com sucesso!</p>
       </div>
     </>
   );

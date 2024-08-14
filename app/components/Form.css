@@ -80,3 +80,19 @@ label {
   scale: 1.1;
   cursor: pointer;
 }
+
+.toast {
+  color: rgb(43, 43, 43);
+  background-color: rgb(71, 255, 47);
+  padding: 10px;
+  border-radius: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
