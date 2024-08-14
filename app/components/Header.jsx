@@ -10,7 +10,7 @@ export default function Header() {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [notificationDropdownVisible, setNotificationDropdownVisible] =
     useState(false);
-  const [notificationCount, setNotificationCount] = useState(5); // Exemplo de número de notificações
+  const [notificationCount, setNotificationCount] = useState(3); // Exemplo de número de notificações
 
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
