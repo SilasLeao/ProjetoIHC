@@ -16,10 +16,10 @@ export default function Form() {
       alert("Por favor, preencha o Nome");
     } else if (phone == "") {
       alert("Por favor, preencha o Telefone");
-    } else if (email == "") {
-      alert("Por favor, preencha o Email");
     } else if (age == "") {
       alert("Por favor, preencha a Idade");
+    } else if (email == "") {
+      alert("Por favor, preencha o Email");
     } else if (doctor == "") {
       alert("Por favor, preencha o Nome do Médico");
     } else if (date == "") {
