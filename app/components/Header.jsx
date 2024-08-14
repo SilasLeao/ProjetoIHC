@@ -8,7 +8,9 @@ export default function Header() {
     <header>
       <div className="logo">
         <Image src={logo} alt="logo" height={50} />
-        <p>MedLink</p>
+        <p>
+          Med<span>Link</span>
+        </p>
       </div>
       <div className="consulta">Marcar Consulta</div>
       <div className="exames">
@@ -20,9 +22,11 @@ export default function Header() {
       <div className="notificacao">
         <FontAwesomeIcon className="bellIcon" icon={faBell} />
       </div>
-      <div className="username">Olá, Usuário!</div>
-      <div className="perfil">
-        <FontAwesomeIcon className="userIcon" icon={faUser} />
+      <div className="perfilSection">
+        <div className="username">Olá, Usuário!</div>
+        <div className="perfil">
+          <FontAwesomeIcon className="userIcon" icon={faUser} />
+        </div>
       </div>
     </header>
   );

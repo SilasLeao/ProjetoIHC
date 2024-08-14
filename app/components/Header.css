@@ -2,28 +2,103 @@ header {
   display: flex;
   align-items: center;
   width: 100vw;
-  justify-content: space-between;
+  justify-content: space-around;
+  height: 7%;
   background-color: rgb(105, 105, 105);
 }
 
 .logo {
   display: flex;
   align-items: center;
+  transition: 0.3s;
+}
+
+.logo p {
+  font-size: 2rem;
+}
+
+.logo span {
+  color: rgb(211, 1, 1);
+}
+
+.logo:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.consulta {
+  color: rgb(211, 1, 1);
+  font-size: 18px;
 }
 
 .exames {
   display: flex;
   align-items: center;
+  font-size: 18px;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.exames:hover {
+  scale: 1.1;
+  cursor: pointer;
+  color: rgb(211, 1, 1);
+}
+
+.hospitais {
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.hospitais:hover {
+  scale: 1.1;
+  cursor: pointer;
+  color: rgb(211, 1, 1);
+}
+
+.suporte {
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.suporte:hover {
+  scale: 1.1;
+  cursor: pointer;
+  color: rgb(211, 1, 1);
+}
+
+.perfilSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.username {
+  font-size: 18px;
+}
+
+.perfil {
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.perfil:hover {
+  cursor: pointer;
+  color: rgb(211, 1, 1);
+  border: 2px solid rgb(211, 1, 1);
 }
 
 .dropdownIcon {
-  height: 16px;
+  height: 20px;
 }
 
 .bellIcon {
-  height: 16px;
+  height: 24px;
 }
 
 .userIcon {
-  height: 16px;
+  height: 24px;
+  width: 24px;
 }
