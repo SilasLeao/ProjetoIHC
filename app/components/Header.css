@@ -4,13 +4,14 @@ header {
   width: 100vw;
   justify-content: space-around;
   height: 7%;
-  background-color: rgb(105, 105, 105);
+  background-color: rgb(127, 216, 231);
 }
 
 .logo {
   display: flex;
   align-items: center;
   transition: 0.3s;
+  color: rgb(43, 43, 43);
 }
 
 .logo p {
@@ -37,6 +38,7 @@ header {
   font-size: 18px;
   gap: 8px;
   transition: 0.3s;
+  color: rgb(43, 43, 43);
 }
 
 .exames:hover {
@@ -48,6 +50,7 @@ header {
 .hospitais {
   font-size: 18px;
   transition: 0.3s;
+  color: rgb(43, 43, 43);
 }
 
 .hospitais:hover {
@@ -59,6 +62,7 @@ header {
 .suporte {
   font-size: 18px;
   transition: 0.3s;
+  color: rgb(43, 43, 43);
 }
 
 .suporte:hover {
@@ -75,13 +79,15 @@ header {
 
 .username {
   font-size: 18px;
+  color: rgb(43, 43, 43);
 }
 
 .perfil {
-  border: 2px solid white;
+  border: 2px solid rgb(43, 43, 43);
   border-radius: 100%;
   padding: 10px;
   transition: 0.3s;
+  color: rgb(43, 43, 43);
 }
 
 .perfil:hover {
@@ -96,6 +102,7 @@ header {
 
 .bellIcon {
   height: 24px;
+  color: rgb(43, 43, 43);
 }
 
 .userIcon {

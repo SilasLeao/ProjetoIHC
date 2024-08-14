@@ -2,11 +2,16 @@
   display: flex;
   flex-direction: column;
   width: 30%;
-  background-color: rgb(105, 105, 105);
-  height: 60%;
+  background-color: rgb(127, 216, 231);
+  height: 65%;
   align-items: center;
   border-radius: 50px;
   padding-top: 1.5rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: rgb(43, 43, 43);
 }
 
 .form span {
@@ -16,6 +21,7 @@
 label {
   padding-left: 1rem;
   width: 50%;
+  color: rgb(43, 43, 43);
 }
 
 .form input {
@@ -24,6 +30,7 @@ label {
   padding: 10px;
   border-radius: 30px;
   width: 50%;
+  margin-bottom: 10px;
 }
 
 ::placeholder {
@@ -31,7 +38,7 @@ label {
 }
 
 #file {
-  background-color: rgb(105, 105, 105);
+  background-color: rgb(127, 216, 231);
 }
 
 .search {
@@ -45,8 +52,10 @@ label {
   align-items: center;
   gap: 6px;
   border-radius: 30px 0 0 30px;
-  background-color: rgb(192, 192, 192);
-  padding: 7px 20px;
+  background-color: rgb(150, 150, 150);
+  padding: 8px 16px 7px 16px;
+  color: rgb(43, 43, 43);
+  margin-bottom: 10px;
 }
 
 .search input {
@@ -57,10 +66,12 @@ label {
 .submitBtn {
   color: rgb(211, 1, 1);
   border: 2px solid rgb(211, 1, 1);
+  background-color: rgb(127, 216, 231);
   padding: 0.6rem 2.5rem;
   border-radius: 30px;
   font-size: 1.3rem;
   transition: 0.3s;
+  margin-top: 1rem;
 }
 
 .submitBtn:hover {
