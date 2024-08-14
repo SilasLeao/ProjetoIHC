@@ -13,7 +13,7 @@ export default function Footer() {
         <FontAwesomeIcon className="socialIcon" icon={faFacebook} />
         <FontAwesomeIcon className="socialIcon" icon={faWhatsapp} />
       </div>
-      <p>MedLink© - Todos os Direitos Reservados</p>
+      <p className="copyright">MedLink© - Todos os Direitos Reservados</p>
     </footer>
   );
 }
